@@ -1,0 +1,136 @@
+/* Reset ค่าพื้นฐาน */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Arial", sans-serif;
+}
+
+body {
+    background: linear-gradient(to right, #b3e5fc, #ffffff);
+    color: #333;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Header */
+h1 {
+    color: #0066cc;
+    margin-bottom: 20px;
+}
+
+/* รายชื่อผู้ใช้ */
+.user-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.user {
+    padding: 15px;
+    background: #f1f1f1;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.user:hover {
+    background: #d1ecf1;
+}
+
+.user a {
+    text-decoration: none;
+    color: #0066cc;
+    font-weight: bold;
+}
+
+/* ปุ่มย้อนกลับ */
+.back-button {
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 10px 15px;
+    background: #0066cc;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.back-button:hover {
+    background: #004da1;
+}
+
+/* รายละเอียดผู้ใช้ */
+.user-detail {
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.user-detail h2 {
+    color: #0066cc;
+    margin-bottom: 10px;
+}
+
+/* ปุ่มดูโพสต์ */
+.view-posts-btn {
+    padding: 10px 15px;
+    background: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.view-posts-btn:hover {
+    background: #218838;
+}
+
+/* รายการโพสต์ */
+.posts-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.post {
+    padding: 15px;
+    background: #f8f9fa;
+    border-left: 5px solid #007bff;
+    border-radius: 5px;
+}
+
+/* ปุ่มดู/ซ่อนความคิดเห็น */
+.toggle-comments {
+    margin-top: 10px;
+    padding: 8px 12px;
+    background: #ff9800;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.toggle-comments:hover {
+    background: #e68900;
+}
+
+/* ความคิดเห็น */
+.comments {
+    margin-top: 10px;
+    padding: 10px;
+    background: #eef7ff;
+    border-radius: 5px;
+    border-left: 3px solid #007bff;
+}
